@@ -63,6 +63,35 @@ header {
   background: #ffb3ba;
   transform: translateX(5px);
 }
+.toc-item {
+ display: flex;
+  align-items: center; /* canh giữa theo chiều dọc */
+  margin: 12px 0;
+}
+
+.lesson-link {
+  flex: 1;
+}
+
+.video-link {
+  flex: 0 0 130px;   /* chiều rộng cố định */
+  margin-left: auto; /* đẩy sang phải tuyệt đối */
+  width: 130px;     /* độ dài cố định */
+  text-align: center;
+  background: #ffd6a5;
+  padding: 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #3a3a3a;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.video-link:hover {
+  background: #fdffb6;
+}
+
+
 
 .back-btn {
   margin-top: 30px;
@@ -96,57 +125,155 @@ footer {
 
   <ul class="toc-list">
     <li><a href="https://drive.google.com/file/d/1c5tg6rTJuyyI27IYbLyA-XVSk_ODBT7K/view?usp=sharing" 
-   target="_blank" rel="noopener noreferrer">Bài tập Tổng ôn toàn diện</a></li>
-    <li><a href="https://drive.google.com/file/d/13MP5lN9kh0gLvz4os-qiVx2LTmeUpmXY/view?usp=sharing" 
-   target="_blank" rel="noopener noreferrer">Lesson 1: Vc chia thì</a></li>
-    <li><a href="https://drive.google.com/file/d/1cbvEdi3cyQ5FOKopOLu2NlmWjkQCiKx7/view?usp=sharing" 
-   target="_blank" rel="noopener noreferrer">Lesson 2: Vc chia thì</a></li>
-    <li><a href="https://drive.google.com/file/d/1Ts5OTzAWVWAXN0GfyKpsYrgHPsk4J_6E/view?usp=sharing"
-   target="_blank" rel="noopener noreferrer">Lesson 3: Vc chia thì - Sự hoà hợp về thì</a></li>
-    <li><a href="#"
-   target="_blank" rel="noopener noreferrer">Lesson 4: Ôn tập & Giải đề Số 01</a></li>
-   <li><a href="https://drive.google.com/file/d/1e1rRhaWUwqwVcDg5qfi1Hq2TgKHPxTRG/view?usp=sharing" 
-   target="_blank" rel="noopener noreferrer">Lesson 5 & 6: V/ to V/ V-ing</a></li>
-   <li><a href="https://drive.google.com/file/d/1aq0XCVHf3XEvHjj30mZG1ddehJ26DhKO/view?usp=sharing" 
-   target="_blank" rel="noopener noreferrer">Lesson 7: Câu tường thuật</a></li>
-   <li><a href="bai1-grammar.html" 
-   target="_blank" rel="noopener noreferrer">Lesson 8: Ôn tập & Giải đề Số 02</a></li>
-   <li><a href="https://drive.google.com/file/d/1Js7ftqZkWSPpINhut-dxmrYzTZbdqIhg/view?usp=sharing" 
-   target="_blank" rel="noopener noreferrer">Lesson 9: Lượng từ</a></li>
-   <li><a href="https://drive.google.com/file/d/1mG6CVasEntulQFZmHN3Nn8MmBhJ1vKFF/view?usp=sharing" 
-   target="_blank" rel="noopener noreferrer">Lesson 10 & 11: Từ loại (N, Adj, Adv)</a></li>
-   <li><a href="https://drive.google.com/file/d/1K_C0QpxRr1B7hHckcEbSU_wVxZN998Mj/view?usp=sharing" 
-   target="_blank" rel="noopener noreferrer">Lesson 12: Ôn tập & Giải đề Số 03; Giới từ - Cụm giới từ - Cụm động từ</a></li>
-   <li><a href="https://drive.google.com/file/d/19BwksEBQ9kYXEivTGGsdkUoYepnFZ-ER/view?usp=sharing" 
-   target="_blank" rel="noopener noreferrer">Lesson 13 & 14: Liên từ & Adv liên kết</a></li>
-    <li><a href="bai1-grammar.html"target="_blank" rel="noopener noreferrer">Lesson 15: Reading Practice</a></li>
-   <li><a href="https://drive.google.com/file/d/12eZ1XE1Id1QaDaBGGAD1dccLlBwM-Q2l/view?usp=sharing" 
-   target="_blank" rel="noopener noreferrer">Lesson 16 & 17: MĐQH</a></li>
-    <li><a href="bai1-grammar.html"target="_blank" rel="noopener noreferrer">Lesson 18: Tổng ôn</a></li>
-   <li><a href="https://drive.google.com/file/d/1-SYSGcuEmAFdXscz0wj_4F1RoO-Jevcd/view?usp=sharing" 
-   target="_blank" rel="noopener noreferrer">Lesson 19 & 20: Câu so sánh</a></li>
-    <li><a href="bai1-grammar.html"target="_blank" rel="noopener noreferrer">Lesson 21: Ôn tập</a></li>
-    <li><a href="bai1-grammar.html"target="_blank" rel="noopener noreferrer">Lesson 22: Ôn tập & Giải đề Số 04</a></li>
-    <li><a href="bai1-grammar.html"target="_blank" rel="noopener noreferrer">Lesson 23: Ôn tập & Giải đề Số 05</a></li>
-    <li><a href="https://drive.google.com/file/d/1c9J4GpfEEuFCzaLsbEvbdUDuyfTtIMQc/view?usp=sharing" 
-   target="_blank" rel="noopener noreferrer">Lesson 24&25: Câu điều kiện và mong ước</a></li>
-    <li><a href="bai1-grammar.html"target="_blank" rel="noopener noreferrer">Lesson 26: Ôn tập & Giải đề Số 06</a>
- </li>   
-<li><a href="https://drive.google.com/file/d/1koTORyu4OHiH8JKNUpQyoIwl6VNeGJ4Y/view?usp=sharing" 
-   target="_blank" rel="noopener noreferrer">Lesson 27: Collocations & Ôn tập đề cương</a></li>
+   target="_blank" rel="noopener noreferrer">File Bài tập Tổng ôn toàn diện</a></li>
+    
 
-    <li><a href="bai1-grammar.html"target="_blank" rel="noopener noreferrer">Lesson 28: Ôn tập & Giải đề Số 07</a></li>
-    <li><a href="bai1-grammar.html"target="_blank" rel="noopener noreferrer">Lesson 29</a></li>
-    <li><a href="bai1-grammar.html"target="_blank" rel="noopener noreferrer">Lesson 30</a></li>
-    <li><a href="bai1-grammar.html"target="_blank" rel="noopener noreferrer">Lesson 31</a></li>
-    <li><a href="bai1-grammar.html"target="_blank" rel="noopener noreferrer">Lesson 32: Ôn tập</a></li>
-    <li><a href="bai1-grammar.html"target="_blank" rel="noopener noreferrer">Lesson 33</a></li>
-    <li><a href="bai1-grammar.html"target="_blank" rel="noopener noreferrer">Lesson 34</a></li>
-    <li><a href="bai1-grammar.html"target="_blank" rel="noopener noreferrer">Lesson 35</a></li>
-    <li><a href="bai1-grammar.html"target="_blank" rel="noopener noreferrer">Lesson 36: Ôn tập - Thi thử</a></li>
-    <li><a href="bai1-grammar.html"target="_blank" rel="noopener noreferrer">Lesson 37: TỔNG ÔN</a></li>
-    <li><a href="bai1-grammar.html"target="_blank" rel="noopener noreferrer">Lesson 38: ĐỀ THI MAY MẮN</a></li>
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/13MP5lN9kh0gLvz4os-qiVx2LTmeUpmXY/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 1: Vc chia thì</a>
+  <a class="video-link" href="#" target="_blank">Bài giảng</a>
+</li>
 
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/1cbvEdi3cyQ5FOKopOLu2NlmWjkQCiKx7/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 2: Vc chia thì</a>
+  <a class="video-link" href="#" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/1Ts5OTzAWVWAXN0GfyKpsYrgHPsk4J_6E/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 3: Vc chia thì - Sự hoà hợp về thì</a>
+  <a class="video-link" href="#" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="" target="_blank" rel="noopener noreferrer">Lesson 4: Ôn tập & Giải đề Số 01</a>
+  <a class="video-link" href="#" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/1e1rRhaWUwqwVcDg5qfi1Hq2TgKHPxTRG/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 5 & 6: V, to V, V-ing</a>
+  <a class="video-link" href="#" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/1aq0XCVHf3XEvHjj30mZG1ddehJ26DhKO/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 7: Câu tường thuật</a>
+  <a class="video-link" href="#" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="" target="_blank" rel="noopener noreferrer">Lesson 8: Ôn tập & Giải đề Số 02</a>
+  <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQCJ5YL1Q947R6fYS9sCXPq4AZpJWYLhgT_U8YpeodINsNA?e=jYfm00" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/1Js7ftqZkWSPpINhut-dxmrYzTZbdqIhg/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 9: Lượng từ</a>
+  <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQC-JONIXekqQZnd243GoVx_Aa2PBclIGWDYJxLKT4DYwTE?e=NR9jbk" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/1mG6CVasEntulQFZmHN3Nn8MmBhJ1vKFF/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 10: Từ loại (N, Adj, Adv) (Phần 1) </a>
+  <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQCCHZHaia-rQo6usk-YDq8QASZ--sSG0sOuu4q0UbZUtDc?e=b3M9tY" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/1mG6CVasEntulQFZmHN3Nn8MmBhJ1vKFF/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 11: Từ loại (N, Adj, Adv) (Phần 2) </a>
+  <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQDFi9WgsH_hSIgwa_dmufDwAdeRma8-Wx8ujT-KWsiHl5w?e=hhtI4S" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/1K_C0QpxRr1B7hHckcEbSU_wVxZN998Mj/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 12: Ôn tập & Giải đề Số 03; Giới từ - Cụm giới từ - Cụm động từ</a>
+  <a class="video-link" href="#" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/19BwksEBQ9kYXEivTGGsdkUoYepnFZ-ER/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 13: Liên từ & Adv liên kết (Phần 1)</a>
+  <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQCz_2ZAlr5KQ6j1YdnFu_r3AWc_6RVKGvkXq1sFImquvlE?e=aieewP" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/19BwksEBQ9kYXEivTGGsdkUoYepnFZ-ER/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 14: Liên từ & Adv liên kết (Phần 2)</a>
+  <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQDRPgZNQQCOQ6TFy2R8XJkxATMpSbMbSOJbfcNy56bnI-I?e=EamnCE" target="_blank">Bài giảng</a>
+</li>
+
+
+<li class="toc-item">
+<a href="" target="_blank" rel="noopener noreferrer">Lesson 15: Reading Practice</a>
+  <a class="video-link" href="#" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/12eZ1XE1Id1QaDaBGGAD1dccLlBwM-Q2l/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 16: MĐQH (Phần 1)</a>
+  <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQCgZ20aISu6QrDIV2_mgdZfATHCBUn0OWPtNAXg1Gq9TG8?e=gcVYmD" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/12eZ1XE1Id1QaDaBGGAD1dccLlBwM-Q2l/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 17: MĐQH (Phần 2)</a>
+  <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQBcopBW_vt9SIT6gR1LP1ELAf1FZPhQuCFi4fCs3dyhStg?e=Hfl98T" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="" target="_blank" rel="noopener noreferrer">Lesson 18: Tổng ôn</a>
+  <a class="video-link" href="#" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/1-SYSGcuEmAFdXscz0wj_4F1RoO-Jevcd/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 19: Câu so sánh (Phần 1)</a>
+  <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQAgeDGLZlf1SoUES1owvN7EAdbkeXds9V8KSlvfgeKXdiU?e=lf2Jdv" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/1-SYSGcuEmAFdXscz0wj_4F1RoO-Jevcd/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 20: Câu so sánh (Phần 2)</a>
+  <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQBvx4jAGrC8RpG3e1TeL_VXAfc3u_h0Qjin-FY_wMG5RGg?e=OSr62g" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/1-SYSGcuEmAFdXscz0wj_4F1RoO-Jevcd/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 20: Câu so sánh kép (Phần 3)</a>
+  <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQDwcYJFgEpFR4Y3ma0kMbzjAT2RIBTfjLzWXb1M_DZH8Ok?e=ndCiTO" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="" target="_blank" rel="noopener noreferrer">Lesson 21: Ôn tập</a>
+  <a class="video-link" href="#" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="" target="_blank" rel="noopener noreferrer">Lesson 22: Ôn tập & Giải đề Số 04</a>
+  <a class="video-link" href="#" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="" target="_blank" rel="noopener noreferrer">Lesson 23: Ôn tập & Giải đề Số 05</a>
+  <a class="video-link" href="#" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/1c9J4GpfEEuFCzaLsbEvbdUDuyfTtIMQc/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 24 & 25: Câu điều kiện và mong ước</a>
+  <a class="video-link" href="#" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="" target="_blank" rel="noopener noreferrer">Lesson 26: Ôn tập & Giải đề Số 06</a>
+  <a class="video-link" href="#" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/1koTORyu4OHiH8JKNUpQyoIwl6VNeGJ4Y/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 27: Collocations & Ôn tập đề cương</a>
+  <a class="video-link" href="#" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="" target="_blank" rel="noopener noreferrer">Lesson 28: Ôn tập & Giải đề Số 07</a>
+  <a class="video-link" href="#" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="" target="_blank" rel="noopener noreferrer">Lesson 29</a>
+  <a class="video-link" href="#" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="" target="_blank" rel="noopener noreferrer">Lesson 30</a>
+  <a class="video-link" href="#" target="_blank">Bài giảng</a>
+</li>
 
 
 
