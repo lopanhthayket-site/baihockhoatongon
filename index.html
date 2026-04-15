@@ -3,129 +3,299 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Khoá THCS - Lớp Anh thầy Kết</title>
+<title>Khoá Tổng Ôn - Lớp Anh thầy Kết</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #fff8f0;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff8f0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
 
-  header {
-    background-color: #EA7B7B; /* pastel cam nhạt */
-    color: #FCF8F8;
-    padding: 40px 20px;
-    font-size: 36px;
-    font-weight: bold;
-  }
+header {
+  background-color: #EA7B7B;
+  color: #FCF8F8;
+  padding: 30px 15px;
+  font-size: 32px;
+  font-weight: bold;
+}
 
-  .button-container {
-    margin: 50px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    max-width: 900px;
-  }
+.toc-container {
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: left;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
 
-  .nav-button {
-    background-color: #a0e7e5; /* pastel xanh nhạt */
-    color: #3a3a3a;
-    border: none;
-    padding: 20px 25px;
-    font-size: 20px;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: transform 0.2s, background-color 0.3s;
-    text-decoration: none;
-    flex: 1 1 200px;
-    max-width: 220px;
-  }
+.toc-container h2 {
+  text-align: center;
+  color: #7a4e3e;
+  margin-bottom: 20px;
+}
 
-  .nav-button:hover {
-    background-color: #ffb3ba; /* pastel hồng nhạt khi hover */
-    transform: translateY(-3px);
-  }
+.toc-list {
+  list-style: none;
+  padding: 0;
+  font-size: 20px;
+}
 
-  .social-section {
-    margin-top: 60px;
-  }
+.toc-list li {
+  margin: 12px 0;
+}
 
-  .social-section h2 {
-    font-size: 24px;
-    color: #7a4e3e;
-    margin-bottom: 20px;
-  }
+.toc-list a {
+  text-decoration: none;
+  color: #3a3a3a;
+  background: #a0e7e5;
+  padding: 12px 18px;
+  display: block;
+  border-radius: 10px;
+  transition: background 0.3s, transform 0.2s;
+}
 
-  .social-icons a {
-    display: inline-block;
-    margin: 0 15px;
-    font-size: 40px;
-    color: #a0e7e5; /* pastel xanh nhạt */
-    transition: color 0.3s, transform 0.2s;
-  }
+.toc-list a:hover {
+  background: #ffb3ba;
+  transform: translateX(5px);
+}
+.toc-item {
+ display: flex;
+  align-items: center; /* canh giữa theo chiều dọc */
+  margin: 12px 0;
+}
 
-  .social-icons a:hover {
-    color: #ffb3ba; /* pastel hồng nhạt khi hover */
-    transform: translateY(-5px);
-  }
+.lesson-link {
+  flex: 1;
+}
 
-  footer {
-    margin-top: 50px;
-    padding: 20px;
-    font-size: 16px;
-    color: #555;
-    background-color: #fff0e1;
-  }
+.video-link {
+  flex: 0 0 130px;   /* chiều rộng cố định */
+  margin-left: auto; /* đẩy sang phải tuyệt đối */
+  width: 130px;     /* độ dài cố định */
+  text-align: center;
+  background: #ffd6a5;
+  padding: 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #3a3a3a;
+  transition: 0.3s;
+  font-weight: bold;
+}
 
-  @media (max-width: 600px) {
-    .nav-button {
-      flex: 1 1 100%;
-      max-width: 90%;
-      font-size: 18px;
-      padding: 15px 10px;
-    }
+.video-link:hover {
+  background: #fdffb6;
+}
 
-    .social-icons a {
-      font-size: 35px;
-      margin: 0 10px;
-    }
-  }
+
+
+.back-btn {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 12px 25px;
+  background: #ffb3ba;
+  color: #3a3a3a;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 15px;
+  font-size: 14px;
+  background-color: #fff0e1;
+  color: #555;
+}
 </style>
 </head>
+
 <body>
 
 <header>
-  Lớp Anh thầy Kết - Luyện thi THCS
+  Khoá Tổng Ôn THCS - Lớp Anh thầy Kết
 </header>
 
-<div class="button-container">
-  <a href="https://lopanhthayket-site.github.io/baihockhoatongon/" class="nav-button">Bài học Khoá Tổng ôn</a>
-  <a href="https://lopanhthayket-site.github.io/Tracnghiemgrammar/" class="nav-button">Trắc nghiệm Grammar</a>
-  <a href="https://lopanhthayket-site.github.io/TracnghiemTuvung/" class="nav-button">Trắc nghiệm Từ vựng</a>
-  <a href="https://lopanhthayket-site.github.io/ChiaDongtu/" class="nav-button">Chia Động từ</a>
-  <a href="https://lopanhthayket-site.github.io/ChiaTuLoai/" class="nav-button">Chia từ loại</a>
-  <a href="https://lopanhthayket-site.github.io/Docdien/" class="nav-button">Đọc điền Đoạn văn</a>
-  <a href="https://lopanhthayket-site.github.io/Dochieu/" class="nav-button">Đọc hiểu Đoạn văn</a>
-  <a href="https://lopanhthayket-site.github.io/Thongbao/" class="nav-button">Nối thông báo</a>
-  <a href="https://lopanhthayket-site.github.io/Sapxepcau/" class="nav-button">Sắp xếp câu</a>
-  <a href="https://lopanhthayket-site.github.io/Vietlaicau/" class="nav-button">Viết lại câu</a>
-  <a href="https://lopanhthayket-site.github.io/Thithu/" class="nav-button">Thi thử</a>
-  <a href="https://lopanhthayket-site.github.io/lopanhthayket_thcs-botuvung/" class="nav-button">Bộ Từ vựng</a>
-  <a href="https://ketng91.github.io/gametuvung/" class="nav-button">Game từ vựng</a> 
-</div>
+<div class="toc-container">
+  <h2>📚 Table of Contents - Nội dung Tổng Ôn Anh vào 10</h2>
 
-<!-- ====== Phần MXH ====== -->
-<div class="social-section">
-  <h2>MXH: Lớp Anh thầy Kết</h2>
-  <div class="social-icons">
-    <a href="https://www.facebook.com/profile.php?id=100095128431844" target="_blank" title="Facebook"><i class="fab fa-facebook-square"></i></a>
-    <a href="https://www.youtube.com/@LopmonAnhthayKet" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
-    <a href="https://www.tiktok.com/@lopanhthayket" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
-  </div>
+  <ul class="toc-list">
+    <li><a href="https://drive.google.com/file/d/1c5tg6rTJuyyI27IYbLyA-XVSk_ODBT7K/view?usp=sharing" 
+   target="_blank" rel="noopener noreferrer">File Bài tập Tổng ôn toàn diện</a></li>
+    
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/13MP5lN9kh0gLvz4os-qiVx2LTmeUpmXY/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 1: Vc chia thì</a>
+  <a class="video-link" href="#" target="_blank">Bài giảng</a>
+</li>
+
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/1cbvEdi3cyQ5FOKopOLu2NlmWjkQCiKx7/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 2: Vc chia thì</a>
+  <a class="video-link" href="#" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/1Ts5OTzAWVWAXN0GfyKpsYrgHPsk4J_6E/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 3: Vc chia thì - Sự hoà hợp về thì</a>
+  <a class="video-link" href="#" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="" target="_blank" rel="noopener noreferrer">Lesson 4: Ôn tập & Giải đề Số 01</a>
+  <a class="video-link" href="#" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/1e1rRhaWUwqwVcDg5qfi1Hq2TgKHPxTRG/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 5 & 6: V, to V, V-ing</a>
+  <a class="video-link" href="#" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/1aq0XCVHf3XEvHjj30mZG1ddehJ26DhKO/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 7: Câu tường thuật (Phần 1)</a>
+  <a class="video-link" href="#" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/1aq0XCVHf3XEvHjj30mZG1ddehJ26DhKO/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 8: Câu tường thuật (Phần 2) & Giải đề Số 02</a>
+  <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQCJ5YL1Q947R6fYS9sCXPq4AZpJWYLhgT_U8YpeodINsNA?e=jYfm00" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/1Js7ftqZkWSPpINhut-dxmrYzTZbdqIhg/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 9: Câu tường thuật (Phần 3) & Lượng từ</a>
+  <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQC-JONIXekqQZnd243GoVx_Aa2PBclIGWDYJxLKT4DYwTE?e=NR9jbk" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/1mG6CVasEntulQFZmHN3Nn8MmBhJ1vKFF/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 10: Từ loại (N, Adj, Adv) (Phần 1) </a>
+  <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQCCHZHaia-rQo6usk-YDq8QASZ--sSG0sOuu4q0UbZUtDc?e=b3M9tY" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/1mG6CVasEntulQFZmHN3Nn8MmBhJ1vKFF/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 11: Từ loại (N, Adj, Adv) (Phần 2) </a>
+  <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQDFi9WgsH_hSIgwa_dmufDwAdeRma8-Wx8ujT-KWsiHl5w?e=hhtI4S" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/1K_C0QpxRr1B7hHckcEbSU_wVxZN998Mj/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 12: Ôn tập & Giải đề Số 03; Giới từ - Cụm giới từ - Cụm động từ</a>
+  <a class="video-link" href="#" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/19BwksEBQ9kYXEivTGGsdkUoYepnFZ-ER/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 13: Liên từ & Adv liên kết (Phần 1)</a>
+  <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQCz_2ZAlr5KQ6j1YdnFu_r3AWc_6RVKGvkXq1sFImquvlE?e=aieewP" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/19BwksEBQ9kYXEivTGGsdkUoYepnFZ-ER/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 14: Liên từ & Adv liên kết (Phần 2)</a>
+  <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQDRPgZNQQCOQ6TFy2R8XJkxATMpSbMbSOJbfcNy56bnI-I?e=EamnCE" target="_blank">Bài giảng</a>
+</li>
+
+
+<li class="toc-item">
+<a href="" target="_blank" rel="noopener noreferrer">Lesson 15: Reading Practice</a>
+  <a class="video-link" href="#" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/12eZ1XE1Id1QaDaBGGAD1dccLlBwM-Q2l/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 16: MĐQH (Phần 1)</a>
+  <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQCgZ20aISu6QrDIV2_mgdZfATHCBUn0OWPtNAXg1Gq9TG8?e=gcVYmD" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/12eZ1XE1Id1QaDaBGGAD1dccLlBwM-Q2l/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 17: MĐQH (Phần 2)</a>
+  <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQBcopBW_vt9SIT6gR1LP1ELAf1FZPhQuCFi4fCs3dyhStg?e=Hfl98T" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="" target="_blank" rel="noopener noreferrer">Lesson 18: Tổng ôn</a>
+  <a class="video-link" href="#" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/1-SYSGcuEmAFdXscz0wj_4F1RoO-Jevcd/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 19: Câu so sánh (Phần 1)</a>
+  <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQAgeDGLZlf1SoUES1owvN7EAdbkeXds9V8KSlvfgeKXdiU?e=lf2Jdv" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/1-SYSGcuEmAFdXscz0wj_4F1RoO-Jevcd/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 20: Câu so sánh (Phần 2)</a>
+  <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQBvx4jAGrC8RpG3e1TeL_VXAfc3u_h0Qjin-FY_wMG5RGg?e=OSr62g" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/1-SYSGcuEmAFdXscz0wj_4F1RoO-Jevcd/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 20: Câu so sánh kép (Phần 3)</a>
+  <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQDwcYJFgEpFR4Y3ma0kMbzjAT2RIBTfjLzWXb1M_DZH8Ok?e=ndCiTO" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="" target="_blank" rel="noopener noreferrer">Lesson 21: Ôn tập</a>
+  <a class="video-link" href="#" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="" target="_blank" rel="noopener noreferrer">Lesson 22: Ôn tập & Giải đề Số 04</a>
+  <a class="video-link" href="#" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="" target="_blank" rel="noopener noreferrer">Lesson 23: Ôn tập & Giải đề Số 05</a>
+  <a class="video-link" href="#" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/1c9J4GpfEEuFCzaLsbEvbdUDuyfTtIMQc/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 24: Câu điều kiện và mong ước (Phần 1)</a>
+  <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQAJ3et_T-Y-QK-wByTos23iARsXmMvErrN6FNRADcDXllc?e=3FPSB9" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/1c9J4GpfEEuFCzaLsbEvbdUDuyfTtIMQc/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 25: Câu điều kiện và mong ước (Phần 2)</a>
+  <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQAfjJ0qBWJVR74MZvWNTmm0AVUb3SLcUa6S2Y_bBRLURdA?e=skTvm1" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="" target="_blank" rel="noopener noreferrer">Lesson 26: Ôn tập & Giải đề Số 06</a>
+  <a class="video-link" href="#" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/1koTORyu4OHiH8JKNUpQyoIwl6VNeGJ4Y/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 27: Collocations & Ôn tập đề cương</a>
+  <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQBZZmBQ4NOfQJDQ3DQPq7_7AT39BFzE_-5IWh-RMkIEdAM?e=gHqJiU" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/1GFKqOVBM9geDG25ub5Dkp918Y2wPKbFq/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 28: So - Such</a>
+  <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQDMNkTwJTbPSKXziDOsOqOlAaxcEgYvHrcXUYS4YCVnrK0?e=WdJ7Mf" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="https://drive.google.com/file/d/1nmsw2BL8crkr8HHgzYPVaPCsIgfNtRlX/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lesson 29: Too - Enough</a>
+  <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQBT9q4FsRiZQr5mHoljF4OBASDG4ryVnSMEFwHxkFq9_RM?e=rHYi3U" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="" target="_blank" rel="noopener noreferrer">Lesson 30: Ôn tập & Giải đề Số 07</a>
+  <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQA1NPIY1oaOSIUzNp9yBFX4AQJiZ08t1Uixse0oNcoKSVQ?e=0ge8xy" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="" target="_blank" rel="noopener noreferrer">Lesson 31: Ôn tập & Giải đề Số 08</a>
+  <a class="video-link" href="#" target="_blank">Bài giảng</a>
+</li>
+
+<li class="toc-item">
+<a href="" target="_blank" rel="noopener noreferrer">Lesson 32: Ôn tập & Giải đề Số 09</a>
+  <a class="video-link" href="#" target="_blank">Bài giảng</a>
+</li>
+
+
+
+  </ul>
+
+  <!-- Quay lại trang chính -->
+  <a href="https://lopanhthayket-site.github.io/lopanhthayket_thcs/" class="back-btn">⬅ Quay về trang chính</a>
 </div>
 
 <footer>
